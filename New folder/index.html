@@ -1,0 +1,170 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Graphs</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--SwiperJs-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--Custom Stylesheet-->
+    <link rel="stylesheet" href="./style.css"
+</head>
+<body>
+    <nav>
+        <div class="container nav__container">
+            
+            <ul class="nav__links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery1">Bahrain GP</a></li>
+                <li><a href="#gallery2">Saudi Arabian GP</a></li>
+                <li><a href="#gallery3">Australian GP</a></li>
+                
+
+            </ul>
+            <button class="nav__toggle-btn" id="nav__toggle-open"><i class="uil uil-bars"></i></button>
+            <button class="nav__toggle-btn" id="nav__toggle-close"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+
+
+    
+
+    <header>
+        <div class="container header__container">
+            <div class="header__right">
+                <div
+                    class="header__head">
+                    <div class="empty header__empty"></div>
+                </div>
+                <h1>Formula 1 Graphs</h1>
+                <p>
+                    <p><a href="https://openf1.org/">OpenF1</a></p>
+                    Credits to OpenF1 for API , make sure to visit their site<br/>
+                    Use the Python code to be able to zoom in and  get more clear , detailed graphs , with commented session keys<br/>  
+                    Reason for missing graphs in some races is lack of  data 
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container about__container">
+            <h2 class="about__title"><br/>Ozgur Coban</h2> <!--br for new line-->
+
+
+            <div class="about__right">
+                <div class="empty about__empty"></div>
+                <p>
+                    <p><a href="https://github.com/ozgur-coban">Github</a></p>
+                    Used Python libraries: Pandas , Matplotlib , Pyplot , Seaborn , Numpy <br/>
+                    For Website: Html , Css , Iconscout , Javascript , Swiperjs
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="gallery1">
+        <div class="container gallery__container swiper mySwiper">
+            <div class="gallery__head">
+                <h2 class="gallery__title">FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2024</h2>
+                
+            </div>
+            <p>
+                Top Speed(Includes DRS)<br/> Tyre Stints(Colors differ for stint numbers)<br/>  TyreLifeComparison(Tyre drop off graph for the same stint with same tyre for different teams with robust )<br/>  IntervalToLeader(Straight line after 100 means LAPPED)
+            </p>
+            <div class="swiper-wrapper">
+                <article class="swiper-slide">
+                    <img src="../images/BahrainTopSpeed.png">
+                </article>
+                <article class="swiper-slide">
+                    <img src="../images/BahrainStints.png">
+                </article>
+                <article class="swiper-slide">
+                    <img src="../images/BahrainTyreLifeComparison.png">
+                </article>
+                <article class="swiper-slide">
+                    <img src="../images/BahrainIntervalToLeader.png">
+                </article>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+            
+    </section>
+
+    <section id="gallery2">
+        <div class="container gallery__container swiper mySwiper">
+            <div class="gallery__head">
+                <h2 class="gallery__title">FORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2024</h2>
+                
+            </div>
+            <p>
+                Top Speed(Includes DRS)<br/> Tyre Stints(Colors differ for stint numbers)<br/>  TyreLifeComparison(Tyre dropoff graph for the same stint with same tyre for different teams with robust )<br/>  IntervalToLeader(Straight line after 100 means LAPPED)
+            </p>
+            <div class="swiper-wrapper">
+                
+                <article class="swiper-slide">
+                    <img src="../images/SaudiStints.png">
+                </article>
+                <article class="swiper-slide">
+                    <img src="../images/SaudiTyreLifeComparison.png">
+                </article>
+                <article class="swiper-slide">
+                    <img src="../images/SaudiIntervalToLeader.png">
+                </article>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+            
+    </section>
+
+
+    <section id="gallery3">
+        <div class="container gallery__container swiper mySwiper">
+            <div class="gallery__head">
+                <h2 class="gallery__title">FORMULA 1 ROLEX AUSTRALIAN GRAND PRIX 2024</h2>
+                
+            </div>
+            <p>
+                Top Speed(Includes DRS)<br/> Tyre Stints(Colors differ for stint numbers)<br/>  TyreLifeComparison(Tyre dropoff graph for the same stint with same tyre for different teams with robust )<br/>  IntervalToLeader(Straight line after 100 means LAPPED)
+            </p>
+            <div class="swiper-wrapper">
+                <article class="swiper-slide">
+                    <img src="../images/AustraliaTopSpeed.png">
+                </article>
+                <article class="swiper-slide">
+                    <img src="../images/AustraliaStints.png">
+                </article>
+                <article class="swiper-slide">
+                    <img src="../images/AustraliaTyreLifeComparison.png">
+                </article>
+                
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+            
+    </section>
+
+
+
+
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
