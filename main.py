@@ -187,7 +187,7 @@ def getIntervalToLeader():
     mainDF=pd.DataFrame()
     
     for drivernumber in DriverNumbers:
-        response=urlopen('https://api.openf1.org/v1/intervals?session_key=9488&driver_number='+drivernumber)
+        response=urlopen('https://api.openf1.org/v1/intervals?session_key=9472&driver_number='+drivernumber)
         data=json.loads(response.read().decode('utf-8'))
         df=pd.DataFrame(data)
         df=df[['gap_to_leader','driver_number']]
@@ -211,6 +211,7 @@ def GraphGetIntervalToLeader():
 
     my_file3 = 'AustraliaIntervalToLeader.png'
     plt.savefig(os.path.join(my_path, my_file3),dpi=300) 
+    
 
 
 ####################################################################################################################################
